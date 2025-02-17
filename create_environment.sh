@@ -90,11 +90,12 @@ cat <<EOL > "$main_dir/startup.sh"
 # Navigate to the app directory and execute reminder.sh
 cd "\$(dirname "\$0")/app" || exit
 ./reminder.sh
+echo "Reminder app started successfully!"
 EOL
 chmod +x "$main_dir/startup.sh"
 
 # Ensure all .sh files are executable
 chmod +x "$main_dir"/app/*.sh "$main_dir"/modules/*.sh "$main_dir/startup.sh"
 
-echo "Setup complete! The directory structure has been created inside '$main_dir'."
+echo "the project is completed successfully"
 
